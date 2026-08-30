@@ -6,7 +6,7 @@ The project compares multiple supervised learning approaches — **Support Vecto
 
 ---
 
-## 📌 Overview
+## Overview
 
 High-Entropy Alloys (HEAs) are advanced metallic materials composed of multiple principal elements. Their resulting phase structure plays an important role in determining their material behavior and performance.
 
@@ -30,7 +30,7 @@ The workflow includes:
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 The main objective is to develop and compare machine learning models capable of predicting the **phase structure of High-Entropy Alloys** from their compositional and synthesis-related characteristics.
 
@@ -43,7 +43,7 @@ The project investigates:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The project uses the **HEA Phase Dataset v1d**.
 
@@ -78,7 +78,7 @@ Some metadata and processing columns were excluded during individual model pipel
 
 ---
 
-## 🧹 Data Preprocessing
+##  Data Preprocessing
 
 The dataset was prepared before model training using the following preprocessing steps:
 
@@ -93,7 +93,7 @@ The dataset was prepared before model training using the following preprocessing
 
 ---
 
-## 🧠 Machine Learning Models
+##  Machine Learning Models
 
 Four machine learning approaches were investigated.
 
@@ -175,7 +175,7 @@ Training and testing performance are compared to examine the model's ability to 
 
 ---
 
-## 📏 Model Evaluation
+##  Model Evaluation
 
 The models were evaluated using multiple classification metrics and analysis techniques.
 
@@ -203,7 +203,7 @@ For the SVM model, **Permutation Feature Importance** was used.
 
 ---
 
-## 📊 Results & Analysis
+## Results & Analysis
 
 The project generated detailed training and testing results for all four machine learning models.
 
@@ -231,7 +231,7 @@ The models are compared based on both predictive performance and interpretabilit
 
 ---
 
-## 🔍 Feature Importance Analysis
+##  Feature Importance Analysis
 
 Feature importance analysis was used to understand which alloy descriptors contribute most strongly to phase prediction.
 
@@ -256,7 +256,7 @@ Tree-based models such as Random Forest and XGBoost provide feature-importance m
 
 ---
 
-## 🧪 Phase Classification
+##  Phase Classification
 
 The target variable is:
 
@@ -273,7 +273,7 @@ The models learn relationships between alloy descriptors and the observed phase 
 
 ---
 
-## ⚖️ Class Imbalance Handling
+##  Class Imbalance Handling
 
 The dataset contains an unequal distribution of samples across phase categories.
 
@@ -285,7 +285,7 @@ Model performance was also examined using class-specific metrics and confusion m
 
 ---
 
-## 🔬 Model Comparison
+##  Model Comparison
 
 The four machine learning approaches were compared using multiple evaluation criteria.
 
@@ -303,7 +303,7 @@ The combination of these evaluation methods provides a broader comparison of the
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 ### Programming Language
 
@@ -336,72 +336,9 @@ The combination of these evaluation methods provides a broader comparison of the
 - Feature Importance
 - Permutation Feature Importance
 
----
 
-## 📁 Repository Structure
 
-    Machine-Learning-Structure-Property-Alloys/
-    │
-    ├── README.md
-    │
-    ├── data/
-    │   └── HEA_Phase_Dataset.xlsx
-    │
-    ├── models/
-    │   ├── svm.py
-    │   ├── randomforest.py
-    │   ├── xgboost.py
-    │   └── neuralnetwork.py
-    │
-    ├── results/
-    │   ├── svm/
-    │   │   ├── confusion_matrix_test.jpeg
-    │   │   ├── confusion_matrix_train.jpeg
-    │   │   ├── feature_importance.jpeg
-    │   │   ├── testing_report.jpeg
-    │   │   └── training_report.jpeg
-    │   │
-    │   ├── random_forest/
-    │   │   ├── confusion_matrix_test.jpeg
-    │   │   ├── confusion_matrix_train.jpeg
-    │   │   ├── feature_importance.jpeg
-    │   │   ├── testing_report.jpeg
-    │   │   └── training_report.jpeg
-    │   │
-    │   ├── xgboost/
-    │   │   ├── confusion_matrix_test.jpeg
-    │   │   ├── confusion_matrix_train.jpeg
-    │   │   ├── feature_importance.jpeg
-    │   │   ├── testing_report.jpeg
-    │   │   └── training_report.jpeg
-    │   │
-    │   └── neural_network/
-    │       ├── confusion_matrix_test.jpeg
-    │       ├── confusion_matrix_train.jpeg
-    │       ├── feature_importance.jpeg
-    │       ├── testing_report.jpeg
-    │       └── training_report.jpeg
-    │
-    └── docs/
-        └── Presentation.pdf
 
----
-
-## ▶️ How to Run
-
-### 1. Clone the Repository
-
-    git clone https://github.com/Rishithachappidi/Machine-Learning-Structure-Property-Alloys.git
-
-### 2. Navigate to the Project
-
-    cd Machine-Learning-Structure-Property-Alloys
-
-### 3. Install Dependencies
-
-    pip install numpy pandas scikit-learn matplotlib seaborn xgboost imbalanced-learn
-
-### 4. Run the Models
 
 #### Support Vector Machine
 
@@ -421,7 +358,7 @@ The combination of these evaluation methods provides a broader comparison of the
 
 ---
 
-## 📂 Results
+## Results
 
 The repository contains model-specific result visualizations and classification reports.
 
@@ -461,7 +398,7 @@ These outputs provide numerical and visual evidence for comparing the four machi
 
 ---
 
-## 📌 Key Takeaways
+##  Key Takeaways
 
 This project demonstrates the application of machine learning to a **materials science classification problem**.
 
@@ -493,7 +430,7 @@ The project evaluates not only overall classification performance but also:
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 The project is based on the **HEA Phase Dataset v1d** and is therefore limited by the size, diversity, and quality of the available data.
 
@@ -510,7 +447,7 @@ The models should therefore be interpreted within the scope of the dataset used 
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 Potential extensions of this project include:
 
@@ -526,7 +463,7 @@ Potential extensions of this project include:
 
 ---
 
-## 🎓 Applications
+##  Applications
 
 Machine learning-based HEA phase prediction can support:
 
@@ -542,7 +479,7 @@ The objective is to complement experimental characterization by providing a comp
 
 ---
 
-## 👤 Project Information
+##  Project Information
 
 **Project:** Machine Learning-Driven Phase Prediction of High-Entropy Alloys
 
@@ -554,7 +491,7 @@ The objective is to complement experimental characterization by providing a comp
 
 ---
 
-## ⭐ Conclusion
+## Conclusion
 
 This project investigates the application of machine learning to **phase prediction in High-Entropy Alloys** using compositional, thermodynamic, and processing-related descriptors.
 
