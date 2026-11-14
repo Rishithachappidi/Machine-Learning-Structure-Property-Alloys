@@ -498,3 +498,13 @@ This project investigates the application of machine learning to **phase predict
 Four approaches — **SVM, Random Forest, XGBoost, and Neural Networks** — are developed and evaluated using classification metrics, confusion matrices, and feature-importance analysis.
 
 The project demonstrates a complete machine learning workflow from **materials data preprocessing to model development, evaluation, and interpretation**, highlighting the potential of machine learning in **materials informatics and data-driven alloy design**.
+
+## Run Random Forest and SVM locally
+
+```powershell
+python -m pip install -r requirements-local.txt
+python randomforest.py
+python svm.py
+```
+
+Both scripts read the bundled workbook beside the scripts and display their plots.
