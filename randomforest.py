@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1X7c7_4L7MVr8o4xmTawZqWn5HlDmkBqE
 """
 
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,7 +22,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 
-file_path = "/content/HEA_Phase_Dataset_v1d.xlsx"
+file_path = Path(__file__).resolve().with_name("HEA_Phase_Dataset.xlsx")
 df=pd.read_excel(file_path, sheet_name="Table 1")
 df
 
@@ -131,6 +133,7 @@ g=sns.heatmap(HEA_mx,annot=True,cmap='seismic',square=True,fmt='.1f',cbar=True,v
 
 from matplotlib import pyplot as plt
 import seaborn as sns
+
 import pandas as pd
 plt.subplots(figsize=(8, 6))
 df_2dhist = pd.DataFrame({

@@ -8,9 +8,10 @@ Original file is located at
 """
 
 # Install required libraries
-!pip install -q openpyxl scikit-learn imbalanced-learn seaborn matplotlib pandas
 
 # Import libraries
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,7 +25,7 @@ from sklearn.inspection import permutation_importance
 from imblearn.over_sampling import SMOTE
 
 # Load the dataset
-file_path = "/content/HEA_Phase_Dataset_v1d.xlsx"
+file_path = Path(__file__).resolve().with_name("HEA_Phase_Dataset.xlsx")
 df = pd.read_excel(file_path)
 
 # Select relevant columns and drop missing values
